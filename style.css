@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body {
+    height: 100vh;
+    background: cadetblue;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+/* Container */
+.container {
+    max-width: 800px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+.container header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*   Add Task */
+.addTask {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.addTask input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+    border: transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.addTask button {
+    margin: 0 3px;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 5px;
+    outline: none;
+    border: transparent;
+    cursor: pointer;
+    background: #8E49E8;
+    color: #333;
+}
+
+/* Display Section  */
+.taskList , .completed {
+    margin: 5px 0;
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+}
+ul li{
+    width: 98%;
+    padding: 18px;
+    margin: 5px 0;
+    font-size: 22px;
+    border-radius: 5px;
+    border: transparent;
+    background: grey;
+}
+ul.completed li {
+    background: #00ff62;
+}
+
+ul.taskList li::first-letter{
+    text-transform: uppercase;
+}
+
+ul.completed li::first-letter{
+    text-transform: uppercase;
+}
+li button {
+    float: right;
+    font-size: 22px;
+    margin-right: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.fa-trash {
+    color: #E74C3C;
+}
+.fa-check {
+    color: #00FF62;
+}

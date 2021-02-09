@@ -7,6 +7,11 @@ let completeTasks = 0;
 
 
 btn.addEventListener('click',addList);
+input.addEventListener('keyup', function(e){
+if (e.keyCode === 13){
+    return addList(e);
+}
+});
 function addList(e){
     
     const taskList = document.querySelector('.taskList');
